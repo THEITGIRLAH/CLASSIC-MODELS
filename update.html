@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <form action="update.php" method="post">
+    <h1>Update employee information by filling out the following form: </h1>
+  <p>Note: Employee number and report code must be a four digit pin. Target the desired employee using the corresponding employee number.</p> <br><br>
+
+    <style>
+        body {
+            background-color: orange;
+        }
+    </style>
+
+
+   <label for="employeeNumber">Employee Number:</label>
+   <input type="text" name="employeeNumber" id="employeeNumber" placeholder="X-X-X-X" pattern="\d*" required> <br><br>
+
+   <label for="lastName">Last Name:</label>
+   <input type="text" name="lastName" id="lastName"> <br><br>
+
+   <label for="firstName">First Name:</label>
+   <input type="text" name="firstName" id="firstName"> <br><br>
+
+   <label for="extension"> Extension:</label>
+   <input type="text" name="extension" id="extension"> <br><br>
+
+   <label for="email">Email:</label>
+   <input type="text" name="email" id="email"> <br><br>
+
+   <label for="officeCode">Office Code:</label>
+    <select name="officeCode" id="officeCode">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    </select> <br><br>
+
+   <label for="reportsTo">Reports To:</label>
+   <input type="text" name="reportsTo" id="reportsTo" placeholder="X-X-X-X" pattern="\d*" required> <br><br>
+
+   <label for="jobTitle">Job Title:</label>
+   <input type="text" name="jobTitle" id="jobTitle"> <br><br>
+
+
+<input type="submit" name="submit" value="Submit">
+
+
+</head>
+<body>
+	
+</body>
+</html>

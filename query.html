@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query</title>
+    <h1>View employee data using this form: </h1>
+  <p>Enter the four digit pin corresponding to the desired employee.</p> <br><br>
+    <style>
+        body {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <form action="query.php" method="POST">
+        <label for="query">Employee Number:</label>
+        <input type="text" name="employeeNumber" id="employeeNumber" placeholder= "X-X-X-X" pattern="\d*">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
